@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background1"
+    android:padding="15sp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:id="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="15sp"
+        android:textColor="@android:color/black"
+        android:text="Surname:"
+        android:textSize="25sp"
+        android:id="@+id/textView1"
+        android:layout_below="@+id/textView"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marks:"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="15sp"
+        android:textSize="25sp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_add"
+        android:text="Id:"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:layout_alignLeft="@+id/textView" />
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"/>
+    <EditText
+        android:id="@+id/editText_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_toEndOf="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        />
+    <EditText
+        android:id="@+id/editText_marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"/>
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_viewAll"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginTop="40dp"
+        android:hint="use for update and delete the data"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Add Data"
+        android:textColor="@android:color/black"
+        android:layout_alignRight="@+id/textView1" />
+
+    <Button
+        android:id="@+id/button_delete"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_green_dark"
+        android:text="Delete"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/button_add" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_green_dark"
+        android:text="Update"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="44dp" />
+
+    <Button
+        android:id="@+id/button_viewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_marks"
+        android:layout_marginTop="24dp"
+        android:text="View All"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/button_update" />
+
+
+
+
+
+
+
+
+</RelativeLayout>
